@@ -1,8 +1,0 @@
-com\nishit\springhibernate\WebConfig.class
-com\nishit\springhibernate\DAO\FeedbackDAOInterface.class
-com\nishit\springhibernate\DAO\FeedbackDAO.class
-com\nishit\springhibernate\SpringConfig.class
-com\nishit\springhibernate\service\FeedbackService.class
-com\nishit\springhibernate\controller\IndexController.class
-com\nishit\springhibernate\AppConfig.class
-com\nishit\springhibernate\entity\Feedback.class
