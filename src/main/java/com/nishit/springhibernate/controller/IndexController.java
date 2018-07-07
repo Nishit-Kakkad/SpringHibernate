@@ -5,7 +5,7 @@
  */
 package com.nishit.springhibernate.controller;
 
-import com.nishit.springhibernate.DAO.FeedbackDAO;
+import com.nishit.springhibernate.DAO.FeedbackDAOInterface;
 import com.nishit.springhibernate.entity.Feedback;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -22,7 +22,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class IndexController {
     
     @Autowired
-    FeedbackDAO fdao;
+    FeedbackDAOInterface fdao;
     
     @RequestMapping(value = "AddFeedback", method = { RequestMethod.POST })
     public ModelAndView addFeedback(@ModelAttribute Feedback feedback) {

@@ -35,10 +35,10 @@ public class AppConfig {
         LocalSessionFactoryBean bean = new LocalSessionFactoryBean();
         Properties prop = new Properties();
         
-        prop.put("mysql.driver", env.getProperty("mysql.driver"));
-        prop.put("mysql.jdbcUrl", env.getProperty("mysql.jdbcUrl"));
-        prop.put("mysql.username", env.getProperty("mysql.username"));
-        prop.put("mysql.password", env.getProperty("mysql.password"));
+        prop.put("hibernate.connection.driver_class", env.getProperty("hibernate.connection.driver_class"));
+        prop.put("hibernate.connection.url", env.getProperty("hibernate.connection.url"));
+        prop.put("hibernate.connection.username", env.getProperty("hibernate.connection.username"));
+        prop.put("hibernate.connection.password", env.getProperty("hibernate.connection.password"));
         
         prop.put("hibernate.show_sql", env.getProperty("hibernate.show_sql"));
         prop.put("hibernate.hbm2ddl.auto", env.getProperty("hibernate.hbm2ddl.auto"));

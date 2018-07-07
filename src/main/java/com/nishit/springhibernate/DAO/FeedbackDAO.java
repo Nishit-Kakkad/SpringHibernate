@@ -10,15 +10,12 @@ import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  *
  * @author Nishit-TCS
  */
-interface FeedbackDAOInterface {
-    boolean addFeedback(Feedback feedback);
-}
-
 @Repository
 public class FeedbackDAO implements FeedbackDAOInterface {
 
@@ -26,6 +23,7 @@ public class FeedbackDAO implements FeedbackDAOInterface {
     private SessionFactory sessionFactory;
     
     @Override
+    @Transactional
     public boolean addFeedback(Feedback feedback) {
         boolean result = false;
         try {
